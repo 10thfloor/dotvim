@@ -1,3 +1,8 @@
+if has('vim_starting')
+    set nocompatible
+    set runtimepath+=~/.vim/bundle/neobundle.vim/
+end
+
 
 " Settings
 set nocompatible
@@ -31,7 +36,7 @@ set cursorline
 set completeopt=longest,menu
 set wildmode=list:longest,list:full
 set complete=.,t
-
+set t_Co=256
 
 " Set up NeoBundle
 set rtp+=~/.vim/bundle/neobundle.vim/
@@ -161,6 +166,7 @@ nnoremap <leader>w :w<cr>
 
 " NERDTree
 let NERDTreeShowHidden=1
+let g:NERDTreeDirArrows=0
 nnoremap <leader><Tab> :NERDTreeToggle<cr>
 
 
