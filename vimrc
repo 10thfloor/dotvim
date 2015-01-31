@@ -5,7 +5,6 @@ end
 
 
 " Settings
-set nocompatible
 set sh=/bin/bash
 set backupdir=~/.vim_backup//
 set directory=~/.vim_swp//
